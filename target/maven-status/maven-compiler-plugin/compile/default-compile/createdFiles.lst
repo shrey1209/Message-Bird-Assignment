@@ -1,0 +1,5 @@
+io\messagebird\configuration\MicrometerConfiguration.class
+io\messagebird\springbootstarter\homer\HomerSimpson.class
+io\messagebird\springbootstarter\MessageBirdAPI.class
+io\messagebird\springbootstarter\timezone\TimeZone.class
+io\messagebird\springbootstarter\timezone\TimeConvertor.class
