@@ -8,6 +8,6 @@
 </head>
 <body>
 <h1>Homer Simpson</h1>
-<img src="images/Homer Simpson.gif" alt="Homer Simpson" height="200" width="200">
+<img src="../../images/Homer Simpson.gif" alt="Homer Simpson" height="200" width="200">
 </body>
 </html>
