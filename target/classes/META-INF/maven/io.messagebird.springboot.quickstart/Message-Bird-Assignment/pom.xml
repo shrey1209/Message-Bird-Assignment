@@ -16,15 +16,22 @@
   		<docker.image.prefix>springio</docker.image.prefix>
   </properties>
   
-  <build>
+<build>
     <plugins>
-        <plugin>
-            <groupId>com.spotify</groupId>
-            <artifactId>dockerfile-maven-plugin</artifactId>
-            <version>1.3.6</version>
-            <configuration>
-                <repository>${docker.image.prefix}/${project.artifactId}</repository>
-            </configuration>
+    	<plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <version>1.2.5.RELEASE</version>
+            <executions>
+                <execution>
+                	<id>default</id>
+                	<phase>install</phase>
+                    	<goals>
+                    		<goal>repackage</goal>
+                    	</goals>
+                    
+                </execution>
+            </executions>
         </plugin>
     </plugins>
 </build>

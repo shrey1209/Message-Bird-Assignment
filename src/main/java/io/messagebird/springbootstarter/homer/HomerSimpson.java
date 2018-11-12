@@ -14,6 +14,6 @@ public class HomerSimpson {
 	)
 	@RequestMapping("homersimpson")
 	public String homer() {
-		return "homer.jsp";
+		return "/src/main/webapp/homer.jsp";
 	}
 }
