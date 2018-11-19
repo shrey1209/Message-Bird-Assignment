@@ -1,0 +1,14 @@
+#Global configurations
+global:
+  scrape_interval:     5s # Set the scrape interval to every 5 seconds.
+  evaluation_interval: 5s # Evaluate rules every 5 seconds.
+
+scrape_configs:
+  - job_name: 'MessageBird'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: ['a993462e0ec0a11e8974302c61b6039e-569292508.eu-west-2.elb.amazonaws.com']
+  - job_name: 'node_exporter'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['a993462e0ec0a11e8974302c61b6039e-569292508.eu-west-2.elb.amazonaws.com']
