@@ -13,4 +13,4 @@ spec:
   selector:
     app: message-bird-app
   type: LoadBalancer
-  loadBalancerIP: http://a993462e0ec0a11e8974302c61b6039e-569292508.eu-west-2.elb.amazonaws.com
+  loadBalancerIP: a993462e0ec0a11e8974302c61b6039e-569292508.eu-west-2.elb.amazonaws.com
