@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: message-bird-deployment
+  labels:
+    app: message-bird-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: message-bird-app
+  template:
+    metadata:
+      labels:
+        app: message-bird-app
+    spec:
+      containers:
+      - name: message-bird-container
+        image: shrey1290/messagebird
+        ports:
+        - containerPort: 8080
